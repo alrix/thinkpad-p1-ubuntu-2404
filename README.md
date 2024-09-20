@@ -33,10 +33,10 @@ Number  Start (sector)    End (sector)  Size       Code  Name
    4        14786560       500115455   231.4 GiB   8300  Linux filesystem
 ```
 
-Part 1 is the EFI mounted under /boot/efi
-Part 2 is /boot
-Part 3 is SWAP
-Part 4 is the ZFS volume
+* Part 1 is the EFI mounted under /boot/efi
+* Part 2 is /boot
+* Part 3 is SWAP
+* Part 4 is the ZFS volume
 
 The ZFS volume has two pools:
 
@@ -46,8 +46,8 @@ bpool  1.88G   220M  1.66G        -         -     0%    11%  1.00x    ONLINE  -
 rpool   230G  37.3G   193G        -         -     4%    16%  1.00x    ONLINE  -
 ```
 
-bpool - the boot pool
-rpool - the root pool 
+* bpool - the boot pool
+* rpool - the root pool 
 
 Nice naming!
 
