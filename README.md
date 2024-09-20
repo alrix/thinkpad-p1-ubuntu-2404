@@ -73,7 +73,7 @@ update-initramfs -u
 ```
 
 
-## 4 SWAP Setup
+### 4 SWAP Setup
 
 SWAP uses a LUKS encrypted partition. You have a number of options here - either detach and setup a RAID-1 mirror, then encrypt using LUKS, or simply extend the SWAP on the system by replicating the existing setup on the second disk (I took this approach). 
 
@@ -86,7 +86,7 @@ Finally,run:
 update-initramfs -u
 ```
 
-## 5 EFI Setup
+### 5 EFI Setup
 
 I took this from a stackexchange message.  Ubuntu's solution to a redundant ESP is to just to create and mount two of them, and reconfigure grub, instead of creating one on a superblock 1.0 RAID-1.
 
